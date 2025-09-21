@@ -128,11 +128,12 @@ Before creating or mounting anything, always check what block devices exist:
 lsblk
 ```
 ### Example output:
-NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sda      8:0    0  100G  0 disk
-├─sda1   8:1    0   96G  0 part /
-└─sda2   8:2    0    4G  0 part [SWAP]
-sdb      8:16   0   20G  0 disk
+|NAME | MAJ:MIN| RM| SIZE |RO | TYPE| MOUNTPOINT|
+|-----|---------|--|------|---|-----|-----------|
+|sda   |  8:0   | 0 | 100G | 0 | disk|           |
+|├─sda1|   8:1  | 0 |  96G | 0 | part| /         |
+|└─sda2|   8:2  | 0 |  4G  | 0 | part| [SWAP]    |
+|sdb   |   8:16 | 0 |  20G | 0 | disk|           |
 
 `sda` → existing disk (already partitioned)
 
