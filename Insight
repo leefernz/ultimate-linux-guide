@@ -10,3 +10,9 @@ lsblk -> list the block store, fdisk -> list block store with more details
 mkdir /mnt/disk -> create a disk
 mkfs -t "ext4 or xfs" /dev/xvdf -> where /dev/xvdf is block system you get from lsblk command
 mount /dev/xvdf /mnt/disk
+
+IMP commands Networking ->
+
+journalctl -u service_name -> View logs for a specific service.
+netstat -tuln -> List all listening ports (TCP/UDP) with numeric addresses.
+netstat -> Show network connections, routing tables, interfaces, etc.
