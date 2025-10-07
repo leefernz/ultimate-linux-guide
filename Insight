@@ -3,3 +3,10 @@ kill "PID" kill -9 "PID" ---> Both are used to kill the process however -9 is a 
 kill -STOP "PID" ---> To stop the process
 kill -CONT "PID" ---> To resume the process
 renice -n "number" -p "PID" --> Setting the priority of the process. less the number higher the priority
+
+How to ADD disk ->
+
+lsblk -> list the block store, fdisk -> list block store with more details
+mkdir /mnt/disk -> create a disk
+mkfs -t "ext4 or xfs" /dev/xvdf -> where /dev/xvdf is block system you get from lsblk command
+mount /dev/xvdf /mnt/disk
