@@ -1,0 +1,1 @@
+ps aux & ps -ef ---> Both are used to display the processes running however aux gives CPU and memory utilization.
