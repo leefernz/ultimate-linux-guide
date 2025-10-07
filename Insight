@@ -1,2 +1,5 @@
 ps aux & ps -ef ---> Both are used to display the processes running however aux gives CPU and memory utilization.
-kill "PID" kill -9 "PID" - Both are used to kill the process however -9 is a force kill
+kill "PID" kill -9 "PID" ---> Both are used to kill the process however -9 is a force kill
+kill -STOP "PID" ---> To stop the process
+kill -CONT "PID" ---> To resume the process
+renice -n "number" -p "PID" --> Setting the priority of the process. less the number higher the priority
