@@ -16,3 +16,15 @@ IMP commands Networking ->
 journalctl -u service_name -> View logs for a specific service.
 netstat -tuln -> List all listening ports (TCP/UDP) with numeric addresses.
 netstat -> Show network connections, routing tables, interfaces, etc.
+
+SHELL SCRIPTING ->>
+
+set -x -> it runs the script in debug mode and prints the command which it ran in the logs.
+For ex- 
++nproc
+1
+
+set -e -> It will exit the script when there is an error
+set -o pipefail -> It will exit when there is an error in pipe command, otherwise it wont.
+
+
